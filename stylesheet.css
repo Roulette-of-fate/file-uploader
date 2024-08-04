@@ -1,1 +1,137 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #B2C1C4; /* メニューバーの色 */
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav .logo {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    flex: 1;
+}
+
+nav .centered-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    border-bottom-color: #CFCFCD; /* 下線の色 */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#message {
+    position: relative;
+    margin-top: 50px; /* メッセージを下に寄せる */
+}
+
+#message .main-message {
+    font-size: 24px; /* 少し大きい文字サイズ */
+    color: #D8B5B3; /* 文字色 */
+    display: inline-block;
+    position: relative;
+}
+
+#message .main-message::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #D8B5B3; /* 下線の色 */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* 文字と下線の間隔 */
+}
+
+.message-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px; /* 「あなたの望むファイルを今すぐに。」からの距離 */
+}
+
+.message-wrapper .sub-message {
+    font-size: 18px; /* 少し小さい文字サイズ */
+    color: #DBA1B2; /* 文字色 */
+    margin-top: 10px; /* 上のメッセージからの距離 */
+}
+
+.message-wrapper .additional-info {
+    font-size: 16px; /* 少し小さい文字サイズ */
+    color: #D8B5B3; /* 文字色 */
+    margin-top: 5px; /* 「何ができるのですか？」からの距離 */
+}
+
+.spacing {
+    height: 20px; /* 空欄の高さ */
+}
+
+#cta {
+    margin-top: 50px; /* ボタンを下に寄せる */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #F8C4CF; /* ボタンのカラー */
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #F5A8B1; /* ホバー時のカラー */
+    transform: scale(1.05); /* ホバー時の拡大効果 */
+}
+
+.cta-button:active {
+    background-color: #F29C9E; /* クリック時のカラー */
+    transform: scale(0.95); /* クリック時の縮小効果 */
+}
 
