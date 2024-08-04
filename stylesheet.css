@@ -63,7 +63,7 @@ main {
 
 #message {
     position: relative;
-    margin-top: 50px; /* メッセージを下に寄せる */
+    margin: 20px 0; /* 上下のマージン */
 }
 
 #message .main-message {
@@ -71,6 +71,7 @@ main {
     color: #D8B5B3; /* 文字色 */
     display: inline-block;
     position: relative;
+    margin-bottom: 20px; /* 「あなたの望むファイルを今すぐに。」と下のメッセージの距離 */
 }
 
 #message .main-message::after {
@@ -85,10 +86,9 @@ main {
 }
 
 .message-wrapper {
-    position: relative;
     display: inline-block;
-    text-align: left;
-    margin-top: 30px; /* 「あなたの望むファイルを今すぐに。」からの距離 */
+    text-align: center;
+    margin-top: 20px; /* 上のメッセージからの距離 */
 }
 
 .message-wrapper .sub-message {
